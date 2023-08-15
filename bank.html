@@ -20,33 +20,51 @@
   </head>
   <body>
     <header>
-      <h1 class="text-5xl text-center my-8">
+      <h1 class="text-2xl md:text-5xl text-center my-8">
         Let's get some
         <span class="font-semibold text-violet-600">Moooooneey!!!</span>
       </h1>
     </header>
     <main>
-      <div class="container grid grid-cols-3 w-4/6 mx-auto gap-5 mt-10">
-        <div class="bg-emerald-400 text-white px-8 py-6 rounded-xl">
+      <div
+        class="container grid grid-cols-1 lg:grid-cols-3 w-4/5 md:w-4/6 mx-auto gap-8 lg:gap-5 mt-10"
+      >
+        <div
+          class="bg-emerald-400 text-white px-8 py-6 rounded-xl text-center lg:text-left"
+        >
           <h4 class="text-3xl mb-4">Deposit</h4>
-          <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+          <h2 class="text-4xl md:text-5xl">
+            $<span id="deposit-total">00</span>
+          </h2>
         </div>
-        <div class="bg-fuchsia-400 text-white px-8 py-6 rounded-xl">
+        <div
+          class="bg-fuchsia-400 text-white px-8 py-6 rounded-xl text-center lg:text-left"
+        >
           <h4 class="text-3xl mb-4">Withdraw</h4>
-          <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+          <h2 class="text-4xl md:text-5xl">
+            $<span id="withdraw-total">00</span>
+          </h2>
         </div>
-        <div class="bg-rose-400 text-white px-8 py-6 rounded-xl">
+        <div
+          class="bg-rose-400 text-white px-8 py-6 rounded-xl text-center lg:text-left"
+        >
           <h4 class="text-3xl mb-4">Balance</h4>
-          <h2 class="text-5xl">$<span id="balance-total">2260</span></h2>
+          <h2 class="text-4xl md:text-5xl">
+            $<span id="balance-total">2260</span>
+          </h2>
         </div>
       </div>
 
-      <div class="dep-wit-container grid grid-cols-2 w-4/6 mx-auto gap-5 my-12">
-        <div class="bg-indigo-400 text-white px-8 py-6 rounded-xl">
+      <div
+        class="dep-wit-container grid grid-cols-1 lg:grid-cols-2 w-4/5 md:w-4/6 mx-auto gap-8 lg:gap-5 my-12"
+      >
+        <div
+          class="bg-indigo-400 text-white px-8 py-6 rounded-xl text-center lg:text-left"
+        >
           <h4 class="text-3xl mb-4">Please Deposit</h4>
           <input
             style="color: black"
-            class="w-11/12 px-3 py-2"
+            class="w-11/12 px-7 md:px-3 py-2 text-sm md:text-base"
             type="text"
             name=""
             id="deposit-amount"
@@ -59,11 +77,13 @@
             Deposit
           </button>
         </div>
-        <div class="bg-cyan-600 text-white px-8 py-6 rounded-xl">
+        <div
+          class="bg-cyan-600 text-white px-8 py-6 rounded-xl text-center lg:text-left"
+        >
           <h4 class="text-3xl mb-4">Please Withdraw</h4>
           <input
             style="color: black"
-            class="w-11/12 px-3 py-2"
+            class="w-11/12 px-5 md:px-3 py-2 text-sm md:text-base"
             type="text"
             name=""
             id="withdraw-amount"
