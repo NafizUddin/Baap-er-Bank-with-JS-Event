@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baap Er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto Slab", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center my-8">
+        Welcome to your
+        <span class="font-semibold text-violet-600">Baap Er Bank!!!</span>
+      </h1>
+    </header>
+    <main>
+      <section class="bg-blue-200 w-4/6 mx-auto p-8">
+        <h2 class="text-3xl font-semibold">Please Login</h2>
+        <div>
+          <input
+            type="email"
+            name=""
+            id="user-email"
+            class="my-4 p-3 block w-4/5"
+            placeholder="Your Email Address"
+          />
+          <input
+            type="password"
+            name=""
+            id="user-password"
+            class="p-3 block w-4/5"
+            placeholder="Your Password"
+          />
+          <button
+            id="submit-btn"
+            class="bg-violet-600 px-6 py-3 rounded-xl text-white mt-4 font-medium text-lg"
+          >
+            Submit
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./Js files/login.js"></script>
+  </body>
+</html>
