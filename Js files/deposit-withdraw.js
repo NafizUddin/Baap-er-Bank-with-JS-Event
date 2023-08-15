@@ -34,18 +34,22 @@ document.getElementById("withdraw-btn").addEventListener("click", function () {
   const withdrawTotal = document.getElementById("withdraw-total");
   const previousWithdrawString = withdrawTotal.innerText;
   const previousWithdraw = parseFloat(previousWithdrawString);
-  const currentWithdraw = previousWithdraw + newWithdrawAmount;
 
-  withdrawTotal.innerText = currentWithdraw;
-
-  //   set the input withdraw to withdraw section
   const balance = document.getElementById("balance-total");
   const previousBalanceString = balance.innerText;
   const previousBalance = parseFloat(previousBalanceString);
-  const currentBalance = previousBalance - newWithdrawAmount;
 
-  balance.innerText = currentBalance;
+  let currentWithdraw;
 
-  //   Clear the input withdraw amount
-  withdrawAmount.value = "";
+  if (previousBalance < newWithdrawAmount) {
+    currentWithdraw = previousWithdraw;
+    withdrawAmount.value = "";
+    alert("You have less balance, so you can't withdraw right now.");
+  } else {
+    currentWithdraw = previousWithdraw + newWithdrawAmount;
+    withdrawTotal.innerText = currentWithdraw;
+    const currentBalance = previousBalance - newWithdrawAmount;
+    balance.innerText = currentBalance;
+    withdrawAmount.value = "";
+  }
 });
